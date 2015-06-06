@@ -1,0 +1,27 @@
+{
+  "name": "dsa.js",
+  "version": "0.0.1",
+  "description": "Implementation of common data structures and algorithms in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tienthanh8490/dsa.js.git"
+  },
+  "keywords": [
+    "algorithm",
+    "datastructure"
+  ],
+  "author": "Nguyen Tien Thanh (https://github.com/tienthanh8490)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tienthanh8490/dsa.js/issues"
+  },
+  "homepage": "https://github.com/tienthanh8490/dsa.js",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
+  }
+}
