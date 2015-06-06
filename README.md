@@ -1,10 +1,21 @@
 # dsa.js
 ##Implementation of common data structures and algorithms in JavaScript<br>
+**How to use
+```
+var dsa = require('dsa');
+var stack = new dsa.Stack();
+var queue = new dsa.Queue();
+var linkedList = new dsa.LinkedList();
+stack.push(1);
+```
+**How to test
+```
+npm test
+```
 **References**
 - Algorithm Design Manual (2nd ed), Skiena
 - Programming Challenges, Skiena
 - Algorithms (4th ed), Sedgewick
-- Competitive Programming, Steven Halim
 
 ##License
 The MIT License (MIT)

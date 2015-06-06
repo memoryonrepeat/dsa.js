@@ -1,0 +1,8 @@
+- Visualization (should be in a separate repo)
+- List (in util.js)
+- Use custom comparison functions etc..
+- Algos
+- Complexity analysis chart
+- Benchmark and optimize performance
+- Compatibility
+- Documentation
