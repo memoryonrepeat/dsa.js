@@ -6,3 +6,4 @@
 - Benchmark and optimize performance
 - Compatibility
 - Documentation
+- Re-implement Stack & Queue using Node
