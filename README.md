@@ -16,6 +16,7 @@ npm test
 - Algorithm Design Manual (2nd ed), Skiena
 - Programming Challenges, Skiena
 - Algorithms (4th ed), Sedgewick
+- [List of data structures](https://en.wikipedia.org/wiki/List_of_data_structures)
 
 ##License
 The MIT License (MIT)
