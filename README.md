@@ -12,11 +12,10 @@ stack.push(1);
 ```
 npm install
 ```
-**How to test**
+**How to test [(Current code coverage)](https://cdn.rawgit.com/tienthanh8490/dsa.js/master/coverage/lcov-report/index.html)**
 ```
 npm test
 ```
-[Current code coverage](https://cdn.rawgit.com/tienthanh8490/dsa.js/master/coverage/lcov-report/index.html)  
 **References**
 - Algorithm Design Manual (2nd ed), Skiena
 - Programming Challenges, Skiena
