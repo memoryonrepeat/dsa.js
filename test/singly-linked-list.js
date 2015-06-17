@@ -1,4 +1,5 @@
-var assert = require("assert");
+var assert = require('chai').assert;
+var expect = require('chai').expect;
 
 var Node = require('../lib/node');
 var SinglyLinkedList = require('../lib/singly-linked-list');
@@ -19,6 +20,7 @@ describe('SinglyLinkedList', function(){
 		it('should add the item to list', function(){
 			list.addFirst(5);
 			assert.strictEqual(5, list.getFirst().getValue(), 'Value of first item is 5');
+			assert.strictEqual(5, list.getLast().getValue(), 'Value of last item is 5');
 			assert.strictEqual(1, list.getSize(), 'List has size 1');
 		});
 	});
@@ -27,6 +29,12 @@ describe('SinglyLinkedList', function(){
 		it('should get the first item of the list', function(){
 			list.addFirst(6);
 			assert.strictEqual(6, list.getFirst().getValue(), 'Value of first item is 6');
+		});
+	});
+
+	describe('#getLast()', function(){
+		it('should get the last item of the list', function(){
+			assert.strictEqual(5, list.getLast().getValue(), 'Value of last item is 5');
 		});
 	});	
 
@@ -61,6 +69,24 @@ describe('SinglyLinkedList', function(){
 			assert.deepEqual([7,6,5], list.toArray(), 'List equals to [7,6,5]');
 			list.addLast(4);
 			assert.deepEqual([7,6,5,4], list.toArray(), 'List equals to [7,6,5,4]');
+			assert.strictEqual(4, list.getLast().getValue(), 'Value of last item is 4');
+		});
+	});
+
+	describe('#removeLast()', function(){
+		it('should remove last element of the list', function(){
+			list.removeLast();
+			assert.deepEqual([7,6,5], list.toArray(), 'List equals to [7,6,5]');
+			assert.strictEqual(5, list.getLast().getValue(), 'Value of last item is 5');
+			list.removeLast();
+			assert.deepEqual([7,6], list.toArray(), 'List equals to [7,6]');
+			list.removeLast();
+			assert.deepEqual([7], list.toArray(), 'List equals to [7]');
+			list.removeLast();
+			assert.deepEqual([], list.toArray(), 'List is empty');
+			expect(function(){
+				list.removeLast();
+			}).to.throw(Error,/Can not remove from empty list/);
 		});
 	});
 

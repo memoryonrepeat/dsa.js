@@ -7,3 +7,6 @@
 - Compatibility
 - Documentation
 - Re-implement Stack & Queue using Node
+- jshint
+- Rewrite tests in a more BDD manner using should syntax
+- Reorganize LinkedList tests
