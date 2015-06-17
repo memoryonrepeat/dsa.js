@@ -35,4 +35,14 @@ describe('SinglyLinkedList', function(){
 		});
 	});	
 
+	describe('#removeFirst()', function(){
+		it('should remove first element of the list', function(){
+			assert.equal(7, list.getFirst().getValue(), 'Value of first item is 7');
+			list.removeFirst();
+			assert.equal(2, list.getSize(), 'List has size 2');
+			assert.equal(6, list.getFirst().getValue(), 'Value of first item is 6');
+			assert.equal(5, list.getFirst().getNext().getValue(), 'Value of second item is 5');
+		});
+	});
+
 });
