@@ -16,7 +16,7 @@ npm install
 ```
 npm test
 ```
-[Current code coverage](./coverage/lcov-report/index.html)
+[Current code coverage](https://cdn.rawgit.com/tienthanh8490/dsa.js/master/coverage/lcov-report/index.html)  
 **References**
 - Algorithm Design Manual (2nd ed), Skiena
 - Programming Challenges, Skiena
