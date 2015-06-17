@@ -5,6 +5,8 @@ var SinglyLinkedList = require('../lib/singly-linked-list');
 
 var list = new SinglyLinkedList();
 
+//TODO: Add more test for edge cases i.e empty list
+
 describe('SinglyLinkedList', function(){
 
 	describe('#isEmpty()', function(){
@@ -46,6 +48,15 @@ describe('SinglyLinkedList', function(){
 	});
 
 	describe('#addLast()', function(){
+
+		it('should successfully add item to an empty list', function(){
+			var emptyList = new SinglyLinkedList();
+			emptyList.addLast(1);
+			assert.deepEqual([1], emptyList.toArray(), 'List equals to [1]');
+			emptyList.addLast(2);
+			assert.deepEqual([1,2], emptyList.toArray(), 'List equals to [1,2]');
+		});
+
 		it('should add the item to the end of the list', function(){
 			assert.deepEqual([7,6,5], list.toArray(), 'List equals to [7,6,5]');
 			list.addLast(4);
