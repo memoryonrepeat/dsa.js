@@ -8,10 +8,15 @@ var queue = new dsa.Queue();
 var linkedList = new dsa.LinkedList();
 stack.push(1);
 ```
+**How to install dependencies**
+```
+npm install
+```
 **How to test**
 ```
 npm test
 ```
+[Current code coverage](./coverage/lcov-report/index.html)
 **References**
 - Algorithm Design Manual (2nd ed), Skiena
 - Programming Challenges, Skiena
