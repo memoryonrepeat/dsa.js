@@ -10,3 +10,4 @@
 - jshint
 - Rewrite tests in a more BDD manner using should syntax
 - Reorganize LinkedList tests
+- Implement Bloom filter
